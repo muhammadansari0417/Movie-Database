@@ -1,0 +1,79 @@
+INSERT INTO "Actor" (actor_ID, movieID, location_ID, First Name, Last Name) VALUES
+(1,1,1,'Tom','Cruise');
+(2,2,2,'Leonardo','DiCaprio');
+(3,3,3,'Dwayne','Johnson');
+(4,4,4,'Johnny','Depp');
+(5,5,5,'Adam','Sandler');
+(6,6,6,'Robert','Downey Jr.');
+(7,7,7,'Tom','Hanks');
+(8,8,8,'Mark','Wahlberg');
+(9,9,9,'Kevin','Spacey');
+
+INSERT INTO "Director" (DirectorID, locationID, FirstName, LastName, Birth Date) VALUES
+(1,10,'Steven','Spielberg','1946-12-18'),
+(2,11,'Sergio','Leone','1929-01-03'),
+(3,12,'Christopher','Nolan','1970-07-30'),
+(4,13,'Sidney','Lumet','1924-06-25'),
+(5,14,'Frank', 'Darabont','1959-01-28'),
+(6,15,'Quentin','Tarantino','1963-03-27'),
+(7,16,'Peter','Jackson','1961-10-31'),
+(8,17,'Francis','Coppola','1939-04-07'),
+(9,18,'David','Fincher','1962-08-28'),
+(10,19,'Robert','Zemeckis','1952-05-14');
+(11,20,'Martin','Scorsese','1942-11-17');
+
+INSERT INTO "Producer" (ProducerID, First Name, Last Name) VALUES
+(1,'Harvey','Weinstein');
+(2,'Bob','Weinstein');
+(3,'Steven','Spielberg');
+(4,'Angelina','Jolie');
+(5,'Matt','Damon');
+(6,'Adam','Sandler');
+(7,'Quentin','Tarantino');
+(8,'Frank','Marshall');
+(9,'George','Clooney');
+
+INSERT INTO "Writer" (WriterID, First Name, Last Name) VALUES
+(1,'Stephen','Colbert');
+(2,'Mark','Halperin');
+(3,'David','Letterman');
+(4,'James','Toback');
+(5,'Tina','Fey');
+(6,'Rose','McGowan');
+(7,'Jimmy','Fallon');
+(8,'Stephen','King');
+(9,'Jay','Leno');
+
+INSERT INTO "Theatre" (TheatreID, AddressID, Name, Phone Number) VALUES
+(1,1,'Cineplex Odeon','905-426-7772');
+(2,2,'Landmark Cinemas','905-665-8942');
+(3,3,'Famous Players','905-839-2977');
+
+INSERT INTO "Audio Studio" (AudioStudioID, Established Date, Revenue) VALUES
+(1,'Sheldon Studio','$40 000');
+(1, 'Jamil Premji Music Studio','$30 000');
+
+INSERT INTO "Ticket" (TicketID, MovieID, MovieTimeID, TheatreID, Price) VALUES
+(1,1,1,1,'$8.99');
+(2,2,2,2,'$10.99');
+(3,3,3,3,'$15.99');
+(4,4,4,4,'$20.99');
+
+INSERT INTO "Genre" (GenreID, Thriller, Comedy, Action, Romance, Sci-Fi) VALUES
+(1,N,N,N,Y,N)
+(2,Y,N,N,N,N)
+(3,N,N,Y,Y,N)
+(4,Y,Y,N,N,N)
+(5,Y,Y,N,Y,N)
+(6,N,N,N,N,Y)
+
+INSERT INTO "Award" (AwardID, MovieID, Oscar, Grammy, International) VALUES
+(1,1,Y,N,N)
+(2,2,N,Y,N)
+(3,3,N,N,Y)
+
+INSERT INTO "Movie Time" (MovieTimeID, TheatreID, 2D Showtime, 3D Showtime) VALUES
+(1,1,'18:00','22:00');
+(2,2,'14:00','18:00');
+(3,3,'10:00','12:00');
+
